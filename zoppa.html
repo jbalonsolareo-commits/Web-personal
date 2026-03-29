@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoppa — Juan Bautista Alonso Lareo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/zoppa.css" />
+</head>
+<body>
+
+<nav>
+  <a href="detail.html#zoppa" class="nav-timeline-btn">← Back to Zoppa</a>
+  <a href="index.html" class="nav-home-link">Juan Bautista Alonso Lareo</a>
+</nav>
+
+<main>
+  <div class="container" id="zoppa-container">
+    <!-- Content injected by JS -->
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 <span>Juan Bautista Alonso Lareo</span></p>
+</footer>
+
+<script>
+  const sections = [
+    {
+      id: 'story',
+      title: 'Zoppa Story',
+      body: `
+        <p>The idea behind Zoppa didn't start overnight. Since high school, I had this recurring thought: <strong>take a business model that works in developed markets and bring it to Latin America</strong>, where it doesn't exist yet, just like <strong>Mercado Libre did with eBay</strong>.</p>
+        <p>Once, my dad was traveling to the US for work, and I wanted to ask him to bring me some clothes. I started searching brand by brand, and it took forever. I just wanted a hoodie. At some point, I typed "hoodies in USA" into Google, and that's when I discovered <strong>ASOS</strong>.</p>
+        <p>It felt like a completely different experience. <strong>A multi-brand platform with great curation, strong brands, and powerful filters.</strong> I ended up buying not just the hoodie, but also two t-shirts and a pair of jeans. Everything arrived perfectly.</p>
+        <p>That's when it clicked.</p>
+        <p>I remember telling my friends about it at a barbecue and saying, <strong>"I want to build this in Argentina."</strong> One of them replied, "That already exists. It's called Dafiti, and it's terrible."</p>
+        <p>I looked into it and quickly lost confidence. Dafiti was already big, and I had no experience. It felt impossible to compete. But the idea stayed in the back of my mind.</p>
+        <p>Years later, in <strong>October 2023</strong>, something changed. A news article came out saying that <strong>Dafiti was leaving Argentina after never becoming profitable.</strong> That reignited everything.</p>
+        <p>In <strong>early 2024</strong>, while working on my thesis, I decided to build it around this idea. We analyzed the market deeply, studied ASOS and Global Fashion Group (Dafiti), and designed a business model inspired by ASOS, adapted to Argentina.</p>
+        <p>The feedback was strong. <strong>One of the evaluators even said he would invest</strong>, but that we needed to improve our storytelling.</p>
+        <p>At the time, I was studying, working, and playing rugby, with very limited time. But once I finished everything, I made a decision that, looking back, was one of the best I've made: <strong>I fully committed to Zoppa.</strong></p>
+        <p>Through the research, I realized something critical.</p>
+        <p>ASOS and Dafiti generated billions in revenue, but they also carried massive fixed costs. Warehousing, logistics, inventory, and large teams made their operations extremely expensive. Despite their scale, both companies have consistently lost many millions of dollars year after year.</p>
+        <p>So the question became clear:</p>
+        <p><strong>How do I build an ASOS without the problems of ASOS?</strong></p>
+        <p>For days, I couldn't find the answer.</p>
+        <p>Then I reached out to a founder on LinkedIn. He invited me to his house, and I went with someone who would later become my co-founder. He didn't give us a direct answer, but he told us a story that changed everything.</p>
+        <p>He explained <strong>how DoorDash started.</strong> In the beginning, they didn't have integrations or infrastructure. They simply uploaded photos of restaurant menus, and when someone ordered, they manually went to the restaurant and fulfilled it.</p>
+        <p>That idea unlocked everything.</p>
+        <p>We realized we didn't need full integrations or brand agreements to start. <strong>We could scrape existing e-commerce sites and validate demand first.</strong> More importantly, we saw a way to avoid the biggest problem of companies like ASOS and Dafiti: fixed costs.</p>
+        <p>Instead of holding inventory or managing logistics, <strong>we could connect directly to brands' e-commerce stores.</strong> This way, products would be listed on our platform, and when a customer made a purchase, <strong>the order would be automatically sent via API to the brand's online store</strong>, where it would be processed as a regular order, requiring no additional effort from the brand.</p>
+        <p>In my head, this was the breakthrough.</p>
+        <p>I believed we could build an ASOS without ASOS's structural problems. I believed that if we executed well, even a company that once reached a <strong>$13 billion valuation</strong> wouldn't be able to compete with a much more efficient model. It would be extremely difficult for them to reduce their fixed costs to our level, given their large teams, warehouses, and operational structure.</p>
+        <p>And I made another key assumption:</p>
+        <p><strong>If ASOS was already generating billions in revenue, then demand was already validated.</strong> We wouldn't need to prove that people wanted this.</p>
+        <p>Looking back, that assumption would later prove to be incomplete.</p>
+        <p>In simple terms, Zoppa was a fashion marketplace built with one idea in mind:</p>
+        <p><strong>become ASOS, without the problems that made ASOS struggle.</strong></p>
+      `,
+    },
+    {
+      id: 'mistakes',
+      title: 'Mistakes Made',
+      body: `
+        <p><strong>Execution was ultimately not at the level it needed to be, and that became the main reason the company failed.</strong></p>
+        <p>As painful as it is to admit, <strong>we did not execute well enough to reach our goal.</strong> We started with WordPress and later moved to a custom built solution. <strong>What should have taken two or three months ended up taking close to ten</strong>, costing us a significant amount of time and money.</p>
+        <p>My mistake was stepping away from the product when it was clearly the most urgent problem. In hindsight, <strong>we should have used a simpler solution like Tienda Nube or Shopify</strong>, at least for the MVP.</p>
+        <p>This lack of execution ended up affecting every part of the business. It made it harder to close deals with brands and to raise capital, as we were often exposed for not being able to deliver fast enough. It also impacted team motivation, as delays and uncertainty started to build over time.</p>
+        <p style="margin-top:48px;"><strong>Our lack of organization and alignment directly impacted our execution speed.</strong></p>
+        <p>We were highly disorganized, and the team did not clearly understand the direction. While I was comfortable with my own way of working, it did not translate well once we started building a team. My cofounder and the rest of the team were not always aligned with the direction I had in mind. I would sometimes shift priorities, but their tasks remained the same. We were not in sync, and that slowed us down.</p>
+        <p>At first, everything was managed through WhatsApp, which was unprofessional and inefficient. Messages got lost, and it was very difficult to track goals or progress. Over time, we improved this by moving to Excel and later to Trello. Looking back, <strong>it was never a talent issue, it was a communication and structure problem.</strong> Once we identified it, we fixed it. We implemented Trello, defined weekly and biweekly goals, and introduced four weekly meetings: a <strong>Monday kickoff, a product meeting, a business update, and a Friday review.</strong> The impact was immediate. Still, this is something we should have implemented from day one.</p>
+        <p style="margin-top:48px;"><strong>Another major challenge was not being able to secure enough brands.</strong></p>
+        <p>I had the hypothesis that, given the crisis many brands were facing, it would be easier to access them. That assumption was wrong. I tried every possible channel: Instagram, LinkedIn, cold calls, referrals, and even visiting stores in person. Sometimes it worked, but most of the time I was ignored. This became a long and exhausting process that took months. Looking back, <strong>I believe I should have brought in a partner with direct access to decision makers in fashion brands.</strong></p>
+        <p style="margin-top:48px;"><strong>Fundraising was another area where my lack of structure hurt me.</strong></p>
+        <p><strong>I was not able to secure investment beyond friends and family</strong>, and a big part of that was my own organization. I did not have a proper system to track who I had spoken to or what the next steps were. Everything was scattered across WhatsApp and my calendar. This was a major mistake that likely cost me valuable opportunities. I also believe that <strong>being more direct with potential investors</strong> could have increased my chances of closing deals.</p>
+        <p style="margin-top:48px;"><strong>We also misallocated time and energy, especially in marketing.</strong></p>
+        <p>One example was social media. The idea was to build a content buffer on Instagram before launch, but the launch kept getting delayed, and that buffer became excessively large. I invested both my time and the team's time into something that did not generate results. If we had launched on time, it would have made sense. But once delays started, I should have adjusted and paced the effort differently.</p>
+        <p style="margin-top:48px;"><strong>I also received valuable feedback about my leadership during high focus periods.</strong></p>
+        <p>When I asked my team for feedback, one of the main points was that <strong>whenever I focused on high priority tasks such as fundraising or closing brands, I neglected the day to day operations of the business.</strong> That created gaps in execution and affected the team.</p>
+        <p style="margin-top:48px;"><strong>Finally, I underestimated several key aspects of building a startup.</strong></p>
+        <p>I underestimated <strong>the importance of profitability, the difficulty of raising capital</strong>, and the value of having a strong partner connected to fashion brands. I kept a low profile on LinkedIn to avoid brands noticing we were selling their products, which limited visibility. I was not demanding enough with influencers, I waited too long to secure formal agreements with brands, and in the first months I did not reach out to people who had previously tried and failed at similar ideas.</p>
+        <p>I wish I had not made these mistakes, because I truly believed I had what it took to build this into a unicorn. But now that I have gone through them, <strong>I know they will make me much stronger for what comes next.</strong> My intention is to turn every one of these mistakes into lessons and make sure I do not repeat them.</p>
+      `,
+    },
+    {
+      id: 'worked',
+      title: 'What Worked',
+      body: `
+        <p><strong>One of my biggest strengths was my level of commitment.</strong></p>
+        <p>From day one, I gave everything I had. There was not a single day where I held back. That does not guarantee results, but it does put you in a position to learn faster than anyone else. My team described me as <strong>highly driven and deeply committed</strong>, and they often told me that this energy spread across the team.</p>
+
+        <p style="margin-top:48px;"><strong>In marketing, we executed two actions that worked particularly well.</strong></p>
+        <p>The first was hiring a friend and his sister to create TikTok and Reels style interviews. These videos performed very well, especially the first one, an interview that I designed between them, which <strong>reached over 170k views.</strong> That translated into more than <strong>5,500 people visiting the website</strong>, our first sales, and direct conversations with customers.</p>
+        <p>The second win came from a campaign I built with Beyond, a brand that was about to attend New York Fashion Week. It started when I reached out to <strong>300 influencers</strong> looking for collaborations. Around 80 responded, and I initially worked with just three of them to produce content. That left me with a large pool of interested creators, but we had no budget and no products for gifting. So I approached Beyond with a proposal. I would connect them with these influencers, they would handle the product exchanges, and in return each influencer would create content for them and for us. This way everyone benefited. Beyond gained exposure without investing time, influencers received value through the exchange, and we got content for free. It worked extremely well. We partnered with a couple of influencers, and the videos <strong>surpassed 40k views</strong>, and we even built a long term relationship with them that helped us continue creating content.</p>
+
+        <p style="margin-top:48px;"><strong>Another key strength was my obsession with learning and exposing myself to new environments.</strong></p>
+        <p>I actively looked for environments where I could learn and grow. I attended events like <strong>Arcap and Urucap</strong>, joined accelerators such as <strong>Draper University and SparkLab</strong>, and participated in hackathons within the entrepreneurial ecosystem. Every conversation, every event, and every person I met expanded my perspective and accelerated my growth in ways I could not have achieved alone.</p>
+
+        <p style="margin-top:48px;"><strong>Learning to ask for help was another turning point in how I operated.</strong></p>
+        <p>At first this was difficult for me, but once I embraced it I started seeing real changes. For example, when I began doubting my own leadership, I reached out to a successful entrepreneur from my school. <strong>That single conversation reshaped how I managed the team</strong> and gave me clarity in moments of uncertainty.</p>
+
+        <p style="margin-top:48px;"><strong>I also made difficult but necessary decisions, even when they were personally hard.</strong></p>
+        <p>At one point I felt that the best decision for Zoppa was to continue without my cofounder. He was an exceptional person and professional, and we had a genuine friendship. Still, I believed it was the right move for the company. It was a painful decision, but ultimately the correct one.</p>
+
+        <p style="margin-top:48px;"><strong>During moments of uncertainty, I focused on bringing calm and clarity to the team.</strong></p>
+        <p>There was a critical situation where we received a legal notice from a clothing brand because we were displaying their products on our Instagram and website. The team panicked, unsure if this would become a broader issue. My role was to bring calm. I explained that this was something I had already anticipated, that I had discussed it with lawyers, and that it was not a serious threat. I also reassured them by sharing real examples of brands that had reacted positively, even laughing, when they found out we had sold their products without prior agreement. <strong>This helped the team regain confidence and move forward without fear.</strong></p>
+
+        <p style="margin-top:48px;"><strong>Finally, one of the things I am most proud of is how valued people felt while working with me.</strong></p>
+        <p>When the team eventually moved on from Zoppa, all of them told me they always felt recognized and appreciated. One of them even thanked me because <strong>his experience at Zoppa helped him land a new job.</strong> They also highlighted that I was consistently clear about expectations and each person's role, which helped create alignment and trust within the team.</p>
+      `,
+    },
+    {
+      id: 'lessons',
+      title: 'Lessons Learned',
+      body: `
+        <p><strong>The team is everything, but alignment matters more than talent alone.</strong></p>
+        <p>Having talented people is not enough. What truly makes the difference is <strong>alignment, clear communication, and a shared culture.</strong> Without that, people start pulling in different directions and execution slows down.</p>
+
+        <p style="margin-top:48px;"><strong>I learned how to operate under pressure and stay composed in high stakes situations.</strong></p>
+        <p>Throughout Zoppa, I had to present the project to investors, executives, and founders. Those moments pushed me out of my comfort zone, but over time they built my confidence. Today, <strong>I feel comfortable speaking to people in positions of power as an equal.</strong></p>
+
+        <p style="margin-top:48px;"><strong>Clarity drives execution.</strong></p>
+        <p>When I structured the team around <strong>concrete weekly and biweekly goals</strong>, the difference in speed and quality was immediate.</p>
+
+        <p style="margin-top:48px;"><strong>Focus and prioritization define progress.</strong></p>
+        <p>Not all problems have the same weight, and learning to identify what truly matters is critical. I made the mistake of not focusing enough on the product when it mattered most, and that had a direct impact on the outcome. <strong>Progress is not about doing more, it is about doing fewer things better.</strong></p>
+
+        <p style="margin-top:48px;"><strong>Execution is what ultimately determines survival.</strong></p>
+        <p>No matter how strong your idea is, it means nothing if you cannot bring it to life on time. <strong>Speed and quality of execution are often the difference between a startup that dies and one that has a chance.</strong></p>
+
+        <p style="margin-top:48px;"><strong>Being part of an ecosystem accelerates learning.</strong></p>
+        <p>Surrounding yourself with other founders, attending events, and asking for feedback pushes your learning curve much faster than trying to figure everything out on your own. Many of the shortcuts we found came directly from those conversations.</p>
+
+        <p style="margin-top:48px;"><strong>I learned the importance of balancing action and learning.</strong></p>
+        <p>Waiting for everything to be perfect slows you down, but moving forward without learning from others leads to avoidable mistakes. <strong>Finding that balance is what keeps you moving forward.</strong></p>
+
+        <p style="margin-top:48px;"><strong>Assumptions need to be validated, not just believed.</strong></p>
+        <p>I assumed it would be easier to access brands given the context they were in, but that proved wrong. <strong>Strong assumptions are not enough, they need to be tested early and aggressively.</strong></p>
+      `,
+    },
+    {
+      id: 'differently',
+      title: 'Do Differently',
+      body: `
+        <p><strong>I would start with a much simpler MVP to test the idea faster.</strong></p>
+        <p>Instead of building a custom solution or WordPress, I would have used a platform like <strong>Tienda Nube</strong> to validate market demand and then scale from there. This would have saved us <strong>months of unnecessary development and money we did not have.</strong></p>
+
+        <p style="margin-top:48px;"><strong>I would prioritize access to brands from the very beginning.</strong></p>
+        <p>In the early days, I would look for a partner who could give me <strong>direct access to national fashion brands.</strong> This would have been key to reaching profitability faster and increasing our chances of raising capital. I believe these two decisions alone would have saved us a significant amount of time and money.</p>
+
+        <p style="margin-top:48px;"><strong>I would get much more involved in the product from day one.</strong></p>
+        <p>At the time, I struggled to engage deeply with the product due to the learning barriers around web development for non technical founders. Today, those barriers are much lower. With <strong>current technology and AI tools</strong>, I would be much more hands on, building and iterating with the developers.</p>
+
+        <p style="margin-top:48px;"><strong>I would bring structure and organization much earlier.</strong></p>
+        <p>There was a clear difference in both speed and quality of execution once I introduced clear goals and better systems. From day one, I would use tools like <strong>Trello instead of relying on WhatsApp</strong>, which cost us a lot in terms of tracking and clarity.</p>
+
+        <p style="margin-top:48px;"><strong>I would focus on building culture from the start.</strong></p>
+        <p>Creating a strong team culture took us a long time, and I now see how important it is for motivation and alignment. In our case, it was especially challenging because team members had other jobs or were geographically dispersed, but that made it even more critical.</p>
+
+        <p style="margin-top:48px;"><strong>I would surround myself with experienced people much earlier.</strong></p>
+        <p>At the beginning, I lost valuable time by not connecting with people who had already gone through similar journeys. <strong>If I had done that earlier, I would have moved faster and avoided many mistakes.</strong></p>
+      `,
+    },
+    {
+      id: 'assumptions',
+      title: 'Assumptions vs Reality',
+      body: `
+        <p><strong>On users, I assumed people would come to the platform to buy, but they mostly came to explore.</strong></p>
+        <p>I expected users to enter, browse, and convert. What actually happened was different. People used the platform to discover products and brands, but not to purchase. The real behavior was exploration, not conversion. Our <strong>conversion rate was 0.15%</strong>, which showed we had traction in attracting users, but not in closing sales.</p>
+
+        <p style="margin-top:48px;"><strong>On the product, I assumed the biggest challenge would be getting brands, but the real bottleneck was the website itself.</strong></p>
+        <p>I expected large brands to be the main obstacle due to their size and internal bureaucracy. However, as I experienced throughout the process, <strong>the biggest difficulty was getting the website to work properly.</strong> That, in turn, made it even harder to close brands, since a weak product reduced trust and made partnerships less compelling.</p>
+
+        <p style="margin-top:48px;"><strong>I assumed that brands would become more open to new channels during a crisis, but what I learned is that some industries are simply resistant to change.</strong></p>
+        <p>My expectation was that difficult conditions would make brands more receptive. What I found instead was that they remained consistent with their behavior. <strong>The industry is not very open to innovation or new technologies</strong>, and the crisis reinforced that mindset. Brands stayed cautious, selective, and resistant to change.</p>
+
+        <p style="margin-top:48px;"><strong>On fundraising, I assumed that a good idea and early traction would be enough, but the reality required much more structure.</strong></p>
+        <p>I thought that having a compelling story would be sufficient to raise capital. What I learned is that <strong>fundraising requires organization, clarity, and strong networking.</strong> It is not just about the idea, it is about having a process and a deep strategy behind it.</p>
+      `,
+    },
+    {
+      id: 'lucky',
+      title: 'Where I Was Lucky',
+      body: `
+        <p><strong>I was very fortunate to work with great professionals who were even better people.</strong></p>
+        <p>They made the day to day experience genuinely enjoyable, and it was a pleasure building Zoppa alongside them. During the toughest moments, they were always there, and <strong>no one stepped away when things got difficult.</strong> Crossing paths with people like that is a privilege, especially considering that most of them were strangers at the beginning.</p>
+
+        <p style="margin-top:48px;"><strong>I was fortunate to have a strong support system that stood by me through both the good and the bad moments.</strong></p>
+        <p>Building a startup is not easy, and having people who genuinely care about you and support you makes a huge difference. Throughout this journey, I felt that more than ever. I am specifically referring to my <strong>family and friends</strong>, many of whom I met along the way while building Zoppa.</p>
+
+        <p style="margin-top:48px;"><strong>We were fortunate that our first video went viral during the first week after launch.</strong></p>
+        <p>It surpassed <strong>170,000 views</strong> and gave us a massive boost early on. That momentum translated into strong initial traction and drove many of the results I mentioned earlier.</p>
+
+        <p style="margin-top:48px;"><strong>I was fortunate to meet people at events who shared valuable advice and made key introductions.</strong></p>
+        <p>Many of those conversations helped me avoid mistakes and saved me both time and money. Over time, I realized <strong>how powerful it is to be present, ask questions, and share what you are building.</strong></p>
+      `,
+    },
+    {
+      id: 'growth',
+      title: 'My Growth',
+      body: `
+        <p><strong>Professionally, I grew significantly in how I think and how I act.</strong></p>
+        <p>I developed a much stronger sense of <strong>prioritization, execution, and decision making under uncertainty.</strong> I learned how to operate in ambiguity, take ownership of outcomes, and move forward even when things were not fully clear. At the same time, I had to get involved in almost every area of the business. I worked on fundraising, negotiated with brands, managed accounting and finances, handled marketing, legal and tax matters, worked on product design and development, dealt with product imports, built relationships with influencers, and much more. <strong>That level of exposure gave me a much broader understanding of how a business actually operates end to end.</strong> Even though the result was not what I expected, I do not regret the experience. If I go back to February 2024, when I decided to fully commit, I would make the same decision again, because what I gained from it goes far beyond the outcome itself.</p>
+
+        <p style="margin-top:48px;"><strong>Personally, it made me much more decisive and efficient.</strong></p>
+        <p>I became faster at evaluating situations, less prone to overanalyzing, and more confident <strong>trusting my intuition when data is not enough.</strong></p>
+
+        <p style="margin-top:48px;"><strong>I also gained a deeper understanding of myself.</strong></p>
+        <p>I learned that I can handle pressure, make difficult decisions, and recover after making mistakes. At the same time, I realized I need to improve my organization, that <strong>asking for help is a strength</strong>, and that being open about what I do not know is one of the most powerful tools you can have.</p>
+
+        <p style="margin-top:48px;"><strong>One of the most important validations came from my team.</strong></p>
+        <p>When I asked for feedback at the end, they told me they saw me as a <strong>strong leader who led by example</strong> and was able to navigate different situations effectively. They highlighted a clear evolution in how I helped the team become more efficient and independent over time. They also mentioned that I was always respectful, which mattered a lot in how we worked together. That confirmed that, even though many things did not go as planned, <strong>the way I led and treated people was one of the things I got right.</strong></p>
+      `,
+    },
+    {
+      id: 'demo',
+      title: 'Product Demo',
+      body: `
+        <a href="https://www.youtube.com/watch?v=n8qePTJwqws" target="_blank" rel="noopener"
+           style="display:block; position:relative; border-radius:12px; overflow:hidden; text-decoration:none;">
+          <img src="https://img.youtube.com/vi/n8qePTJwqws/maxresdefault.jpg"
+               alt="Zoppa Product Demo"
+               style="width:100%; display:block; border-radius:12px;" />
+          <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+                      background:rgba(0,0,0,0.35); transition:background 0.2s;"
+               onmouseover="this.style.background='rgba(0,0,0,0.5)'"
+               onmouseout="this.style.background='rgba(0,0,0,0.35)'">
+            <div style="width:72px; height:72px; background:#ff0000; border-radius:50%;
+                        display:flex; align-items:center; justify-content:center;
+                        box-shadow:0 4px 24px rgba(0,0,0,0.5);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <p style="text-align:center; margin-top:14px; font-size:0.82rem;">
+          <a href="https://www.youtube.com/watch?v=n8qePTJwqws" target="_blank" rel="noopener"
+             style="color:var(--accent-glow);">Watch on YouTube →</a>
+        </p>
+      `,
+    },
+  ];
+
+  const order = sections.map(s => s.id);
+
+  function render() {
+    const hash = window.location.hash.replace('#', '') || '';
+    const data = sections.find(s => s.id === hash);
+    const container = document.getElementById('zoppa-container');
+    const currentIdx = order.indexOf(hash);
+
+    if (!data) {
+      container.innerHTML = `
+        <div class="not-found">
+          <h1>Section not found</h1>
+          <p>Head back to the Zoppa page.</p>
+          <a href="detail.html#zoppa" class="btn-primary">← Back to Zoppa</a>
+        </div>`;
+      return;
+    }
+
+    document.title = `${data.title} — Zoppa`;
+
+    const prevId   = currentIdx > 0 ? order[currentIdx - 1] : null;
+    const nextId   = currentIdx < order.length - 1 ? order[currentIdx + 1] : null;
+    const prevData = prevId ? sections.find(s => s.id === prevId) : null;
+    const nextData = nextId ? sections.find(s => s.id === nextId) : null;
+
+    const navHtml = `
+      <div class="nav-milestones">
+        <a href="zoppa.html#${prevId || ''}" class="nav-milestone-btn ${prevData ? '' : 'disabled'}" style="text-align:left;">
+          ← Previous<br>
+          <strong>${prevData ? prevData.title : '—'}</strong>
+        </a>
+        <a href="zoppa.html#${nextId || ''}" class="nav-milestone-btn ${nextData ? '' : 'disabled'}" style="text-align:right;">
+          Next →<br>
+          <strong>${nextData ? nextData.title : '—'}</strong>
+        </a>
+      </div>`;
+
+    container.innerHTML = `
+      <div class="breadcrumb">
+        <a href="index.html">JBAL</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="index.html#story">My Story</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="detail.html#zoppa">Zoppa</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>${data.title}</span>
+      </div>
+
+      <div class="detail-card">
+        <h1>${data.title}</h1>
+        <div class="detail-body">${data.body}</div>
+      </div>
+
+      ${navHtml}
+    `;
+  }
+
+  render();
+  window.addEventListener('hashchange', render);
+</script>
+</body>
+</html>

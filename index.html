@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Bautista Alonso Lareo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/index.css" />
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo" style="text-decoration:none; color:inherit;">Juan Bautista Alonso Lareo</a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#story">My Story</a></li>
+    <li><a href="#qa">Q&amp;A</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-image-wrap reveal">
+        <div class="hero-image-ring">
+          <img id="profile-img"
+            src="assets/profile.jpg"
+            alt="Juan Bautista Alonso Lareo"
+            onerror="this.style.display='none'; document.getElementById('initials').style.display='flex';" />
+          <div class="initials-fallback" id="initials" style="display:none;">JB</div>
+        </div>
+      </div>
+
+      <div class="hero-content reveal" style="transition-delay:0.1s;">
+        <div class="status-badge" style="margin-bottom:20px;">
+          <span class="status-dot"></span>
+          Buenos Aires, Argentina
+        </div>
+
+        <h1>Juan Bautista<br>Alonso Lareo</h1>
+
+        <p class="subtitle">
+          Co-founded ZOPPA, ex Naranja X, Business Administration graduate at UdeSA.
+        </p>
+
+        <!-- All 3 buttons same style, horizontal -->
+        <div class="hero-buttons">
+          <a href="https://wa.me/5491158154871" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.563 4.137 1.542 5.87L.057 23.88a.5.5 0 00.617.601l6.222-1.636A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.094-1.422l-.365-.216-3.786.996 1.01-3.685-.237-.38A9.818 9.818 0 1112 21.818z"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:jbalonsolareo@gmail.com" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/juanbautistaalonsolareo/" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll CTA -->
+    <div class="hero-cta-section reveal" style="transition-delay:0.25s;">
+      <p class="hero-cta-label">Explore</p>
+      <div class="hero-cta-grid">
+        <button class="big-nav-btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+          <span class="big-nav-btn-icon">📖</span>
+          <div class="big-nav-btn-title">View my Story</div>
+          <div class="big-nav-btn-desc">From Montevideo to building Zoppa</div>
+          <span class="big-nav-btn-arrow">→</span>
+        </button>
+        <button class="big-nav-btn" onclick="document.getElementById('qa').scrollIntoView({behavior:'smooth'})">
+          <span class="big-nav-btn-icon">💬</span>
+          <div class="big-nav-btn-title">Questions &amp; Answers</div>
+          <div class="big-nav-btn-desc">Get to know me better</div>
+          <span class="big-nav-btn-arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE — ordered by END year -->
+<section id="story">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" style="font-size:1.1rem; padding:8px 22px;">My Story</span>
+    </div>
+
+    <div class="timeline">
+
+      <!-- 1: end 2001 -->
+      <div class="timeline-item" id="tl-born">
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2001</div>
+          <div class="timeline-title">Born in Montevideo</div>
+          <p class="timeline-desc">I was born in <strong>Montevideo, Uruguay</strong>, where my story began.</p>
+          <a href="detail.html#born" class="btn-see-more">See more →</a>
+        </div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <!-- 2: end 2003 -->
+      <div class="timeline-item" id="tl-argentina">
+        <div class="timeline-empty"></div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2003</div>
+          <div class="timeline-title">Moving to Argentina</div>
+          <p class="timeline-desc">Moved to <strong>Buenos Aires, Argentina</strong> due to my father's work.</p>
+          <a href="detail.html#argentina" class="btn-see-more">See more →</a>
+        </div>
+      </div>
+
+      <!-- 3: end 2018 (UCLA) -->
+      <div class="timeline-item" id="tl-ucla">
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-title">UCLA Summer Program</div>
+          <p class="timeline-desc">Attended a <strong>3-week summer program at UCLA</strong>. A turning point, I discovered a completely different mindset toward <strong>business, ambition, and scale</strong>.</p>
+          <a href="detail.html#ucla" class="btn-see-more">See more →</a>
+        </div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <!-- 4: end 2019 (Newman) -->
+      <div class="timeline-item" id="tl-newman">
+        <div class="timeline-empty"></div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2008 — 2019</div>
+          <div class="timeline-title">Cardenal Newman School</div>
+          <p class="timeline-desc">Attended <strong>Cardenal Newman School</strong>, one of the most recognized schools in Argentina.</p>
+          <a href="detail.html#newman" class="btn-see-more">See more →</a>
+        </div>
+      </div>
+
+      <!-- 5: end 2020 (Pandemic self-ed) -->
+      <div class="timeline-item" id="tl-pandemic">
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-title">Self-Education During the Pandemic</div>
+          <p class="timeline-desc">Pursued advanced online education, completing courses from <strong>HarvardX</strong> and <strong>MITx</strong>.</p>
+          <a href="detail.html#pandemic" class="btn-see-more">See more →</a>
+        </div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <!-- 6: end 2023 (Investment Fund) -->
+      <div class="timeline-item" id="tl-fund">
+        <div class="timeline-empty"></div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2020 — 2023</div>
+          <div class="timeline-title">Investment Fund Creation</div>
+          <p class="timeline-desc">Co-founded a democratic investment fund with 8 partners. Achieved a <strong>31% return over 26 months</strong>.</p>
+          <a href="detail.html#fund" class="btn-see-more">See more →</a>
+        </div>
+      </div>
+
+      <!-- 7: end 2023 (Cross-border) -->
+      <div class="timeline-item" id="tl-commerce">
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title">Cross-Border Commerce Venture</div>
+          <p class="timeline-desc">Identified <strong>pricing inefficiencies</strong> between Argentina and Uruguay and built a business selling sports supplements.</p>
+          <a href="detail.html#commerce" class="btn-see-more">See more →</a>
+        </div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <!-- 8: end 2024 (NX) -->
+      <div class="timeline-item" id="tl-nx">
+        <div class="timeline-empty"></div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-title">Financial Planning Intern at NX</div>
+          <p class="timeline-desc">Worked in <strong>Financial Planning</strong>, gaining hands-on experience in financial modeling, forecasting, and strategic analysis.</p>
+          <a href="detail.html#nx" class="btn-see-more">See more →</a>
+        </div>
+      </div>
+
+      <!-- 9: end 2025 (San Andrés) -->
+      <div class="timeline-item" id="tl-sanandres">
+        <div class="timeline-card reveal">
+          <div class="timeline-year">2020 — 2024</div>
+          <div class="timeline-title">Universidad de San Andrés</div>
+          <p class="timeline-desc">Graduated in <strong>Business Administration from UdeSA</strong>, one of the most prestigious universities in Latin America.</p>
+          <a href="detail.html#sanandres" class="btn-see-more">See more →</a>
+        </div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <!-- 10: end 2025 (Zoppa) -->
+      <div class="timeline-item" id="tl-zoppa">
+        <div class="timeline-empty"></div>
+        <div class="timeline-spacer"><div class="timeline-dot"></div></div>
+        <div class="timeline-card reveal" style="border-color:rgba(59,130,246,0.2);">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-title">Founder &amp; CEO at Zoppa</div>
+          <p class="timeline-desc">Co-founded <strong>Zoppa</strong>, a fashion marketplace.</p>
+          <a href="detail.html#zoppa" class="btn-see-more">See more →</a>
+        </div>
+      </div>
+
+      <!-- 11: Soon 2026 -->
+      <div class="timeline-item" id="tl-advisor">
+        <div class="timeline-card reveal" style="border-color: rgba(168,85,247,0.25); background: rgba(17,24,39,0.7);">
+          <div class="timeline-year" style="color: #c084fc;">2026</div>
+          <div style="display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;">
+            <div class="timeline-title" style="margin-bottom:0;">What's next</div>
+            <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(168,85,247,0.12);border:1px solid rgba(168,85,247,0.3);color:#c084fc;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:20px;">
+              <span style="width:6px;height:6px;border-radius:50%;background:#c084fc;display:inline-block;animation:pulse-purple 2s infinite;"></span>
+              Soon
+            </span>
+          </div>
+          <p class="timeline-desc" style="color: var(--text-muted); font-style: italic;">The next chapter is about to begin.</p>
+        </div>
+        <div class="timeline-spacer"><div class="timeline-dot" style="background:#c084fc;box-shadow:0 0 0 3px rgba(168,85,247,0.2),0 0 20px rgba(168,85,247,0.25);"></div></div>
+        <div class="timeline-empty"></div>
+      </div>
+
+    </div>
+
+    <div class="timeline-end reveal">
+      <button class="btn btn-outline" onclick="document.getElementById('qa').scrollIntoView({behavior:'smooth'})">
+        Go to Questions →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Q&A -->
+<section id="qa">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" style="font-size:1.1rem; padding:8px 22px;">Questions &amp; Answers</span>
+    </div>
+
+    <div class="qa-list">
+      <div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">What are your weaknesses?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner">I tend to have low attention to repetitive tasks and can sometimes be disorganized. However, I constantly work on improving my systems and structure.</div></div>
+      </div>
+      <div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">What are your strengths?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner">I am highly resilient, creative, and proactive. I take ownership and move fast when I see opportunities.</div></div>
+      </div>
+<div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">What do you do in your free time?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner">I enjoy watching sports, spending time with friends and family, and listening to podcasts.</div></div>
+      </div>
+      <div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">What sports do you practice?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner">Football, gym training, tennis, padel, golf, and surfing.</div></div>
+      </div>
+      <div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">What are your passions?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner">Sports and studying the stories of highly successful individuals.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <span class="tag" style="margin-bottom:20px; display:inline-block;">Contact</span>
+      <h2>Let's connect.</h2>
+      <p>Whether you're looking for a collaborator, building something new or just want to talk , I'm always open to interesting conversations.</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/5491158154871" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.563 4.137 1.542 5.87L.057 23.88a.5.5 0 00.617.601l6.222-1.636A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.094-1.422l-.365-.216-3.786.996 1.01-3.685-.237-.38A9.818 9.818 0 1112 21.818z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:jbalonsolareo@gmail.com" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/juanbautistaalonsolareo/" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Juan Bautista Alonso Lareo</span></p>
+</footer>
+
+<script>
+  /* Progress bar */
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const total = document.body.scrollHeight - window.innerHeight;
+    bar.style.width = (scrolled / total * 100) + '%';
+  }, { passive: true });
+
+  /* Scroll reveal */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  window.addEventListener('load', () => {
+    document.querySelectorAll('#hero .reveal').forEach(el => {
+      setTimeout(() => el.classList.add('visible'), 100);
+    });
+  });
+
+  /* Accordion */
+  document.querySelectorAll('.qa-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.qa-item');
+      const body   = item.querySelector('.qa-body');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.qa-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.qa-body').style.maxHeight = null;
+        i.querySelector('.qa-icon').textContent = '+';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        item.querySelector('.qa-icon').textContent = '+';
+      }
+    });
+  });
+
+  /* Profile image fallback — shows initials if profile.jpg not found */
+</script>
+</body>
+</html>

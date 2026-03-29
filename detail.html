@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story — Juan Bautista Alonso Lareo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/detail.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a id="nav-timeline-btn" href="index.html#story" class="nav-timeline-btn">← Back to Timeline</a>
+  <a href="index.html" class="nav-home-link">Juan Bautista Alonso Lareo</a>
+</nav>
+
+<main>
+  <div class="container" id="detail-container">
+    <!-- Content injected by JS -->
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 <span>Juan Bautista Alonso Lareo</span></p>
+</footer>
+
+<script>
+  /* ── Milestone data ──────────────────────────────────────────── */
+  const milestones = [
+    {
+      id: 'born',
+      year: '2001',
+      title: 'Born in Montevideo',
+      body: `
+        <p>I was born in <strong>Montevideo, Uruguay</strong>, a place that still holds a big part of who I am. Most of my family is still there, my grandparents, uncles, cousins, and even some close friends.</p>
+        <p>When I was three, <strong>my father's job brought us to Buenos Aires</strong>, where I grew up. Argentina is where I built my life, formed my closest friendships, and had most of my defining experiences.</p>
+        <p>But Uruguay never really left me. It stayed somewhere deeper, shaping how I see myself. So much so that <strong>if Uruguay plays Argentina, I'll always find myself rooting for Uruguay</strong>, even if I wouldn't mind Messi scoring.</p>
+        <p>That mix of identities shows up in small ways too. My friends started calling me <strong>"uru" or "charru"</strong>, a nickname that comes from a warm and familiar way of referring to Uruguayans, and one that, in a way, captures both where I come from and who I've become.</p>
+      `,
+    },
+    {
+      id: 'argentina',
+      year: '2003',
+      title: 'Moving to Argentina',
+      body: `
+        <p>As I mentioned earlier, in <strong>2003 my family moved to Argentina</strong> because of my father's job. It's also where my younger brother was born, and where our lives began to take shape.</p>
+        <p>Over time, <strong>Argentina became much more than the place where I grew up. It became home.</strong> A country defined by its mix of city life, nature, and really good people. Looking back, I feel lucky to have ended up here.</p>
+        <p>I've now <strong>lived in Argentina for over 21 years</strong>, long enough for it to shape who I am in ways I probably don't even realize.</p>
+        <p>Somewhere along the way, that mix of identities became part of me. <strong>In Uruguay, I'm "the Argentine." In Argentina, I'm "the Uruguayan."</strong></p>
+      `,
+    },
+    {
+      id: 'ucla',
+      year: '2018',
+      title: 'UCLA Summer Program',
+      body: `
+        <p>In 2018, I attended a <strong>three-week intensive summer program at UCLA</strong> in Los Angeles. It was, without a doubt, <strong>one of the most transformative experiences of my life.</strong></p>
+        <p>For the first time, I was surrounded by people from all over the world who approached business, ambition, and possibility in completely different ways. <strong>The scale of thinking in the US, the boldness of ideas, and the willingness to dream big and execute</strong> felt entirely new to me.</p>
+        <p>The program focused on the business of entertainment, media, and sports. Mornings were dedicated to theory, while afternoons were shaped by real-world exposure. We heard directly from professionals working at companies like <strong>Apple, the Los Angeles Lakers, Fox Sports, Warner, CAA, WME, and Immortals</strong>, along with many other industry leaders, and visited several of their headquarters.</p>
+        <p>I came back to Buenos Aires as a different person. <strong>I no longer just wanted to follow a path, I wanted to create my own.</strong> I felt a strong drive to start things, to build, and to become someone who creates real impact in the world. That mindset has stayed with me ever since, shaping how I approach everything I do.</p>
+      `,
+    },
+    {
+      id: 'newman',
+      year: '2008 — 2019',
+      title: 'Cardenal Newman School',
+      body: `
+        <p><strong>Cardenal Newman School is one of the most recognized and prestigious schools in Argentina</strong>, known for its strong academics, English program, and deep connection to sports.</p>
+        <p>I spent my <strong>entire school journey there, from primary school through high school.</strong> More than just an education, it was a place that truly shaped who I am today.</p>
+        <p>Newman gave me a lot. It's where I built my <strong>closest group of friends, relationships that remain a core part of my life.</strong> It also instilled values that have stayed with me over time, <strong>discipline, consistency, and a strong sense of community.</strong> Through sports, especially rugby, I developed habits that continue to guide me.</p>
+        <p>I played <strong>rugby from the age of nine to sixteen</strong>, and in my final two years, I transitioned to volleyball.</p>
+        <p>Years later, when I needed support for one of my ventures, Zoppa, <strong>that same community showed up for me.</strong> The response was incredibly genuine, a reflection of the kind of environment Newman creates and the people it brings together.</p>
+      `,
+    },
+    {
+      id: 'pandemic',
+      year: '2020',
+      title: 'Self-Education During the Pandemic',
+      stats: [
+        { value: 'HarvardX', label: 'completed courses' },
+        { value: 'MITx', label: 'completed courses' },
+      ],
+      body: `
+        <p>I had just started university when the pandemic hit. I only made it through the <strong>first two weeks on campus before everything moved online.</strong> While my university was quick to adapt to a virtual format, the classes and teaching didn't fully keep up.</p>
+        <p>I suddenly found myself at home with a lot of unstructured time. Instead of feeling comfortable, <strong>it felt like I was standing still. That didn't sit well with me.</strong></p>
+        <p>So I started looking for ways to keep learning on my own.</p>
+        <p>I enrolled in <strong>Entrepreneurship in Emerging Economies through HarvardX</strong>, followed by <strong>You Can Innovate: User Innovation and Entrepreneurship from MITx.</strong> Both courses were great, but more importantly, they reflected my <strong>drive to keep learning constantly and my curiosity to explore new ideas.</strong></p>
+      `,
+    },
+    {
+      id: 'fund',
+      year: '2020 — 2023',
+      title: 'Investment Fund Creation',
+      stats: [],
+      body: `
+        <p>In 2020, a group of eight friends and I had a chat where we constantly shared news about companies and crypto. It was active, fast-paced, and full of curiosity. We were all trying to understand what was happening in the markets and where opportunities might be.</p>
+        <p>There was one problem. Many of the stocks we were interested in simply weren't accessible from Argentina. <strong>The government restrictions meant we could only invest through CEDEARs</strong>, which are local certificates that track foreign stocks. While useful, they came with limitations, exposure to exchange rate fluctuations, price differences from the original stock, and lower liquidity in some of the smaller or less traded companies we were interested in.</p>
+        <p>At the same time, I was watching a lot of YouTube content about high-potential stocks that we couldn't directly invest in. So I found a workaround. I coordinated with a friend who was studying abroad and could invest on my behalf.</p>
+        <p>Not long after, another friend reached out saying he wanted to invest in a very niche stock. That's when the idea clicked.</p>
+        <p><strong>What if we built a "democratic fund" together?</strong></p>
+        <p>We pooled our savings, not a huge amount, but meaningful to us. Then we set up a Slack workspace where anyone could propose an investment. <strong>Every decision, whether to buy or sell, was put to a vote. If a proposal reached 66% approval, it was executed.</strong></p>
+        <p>Not everyone had the same voting power. <strong>Each vote was weighted based on how much money each person had contributed to the fund.</strong></p>
+        <p>Over the course of <strong>26 months, we achieved a 31% return, significantly above the S&P 500</strong> during that period.</p>
+        <p>But to be honest, luck played a big role.</p>
+        <p>None of us were professionals, and our analysis wasn't particularly deep. <strong>A big part of our performance came from being early in companies like Nvidia and assets like Ethereum</strong>, which ended up driving most of the returns.</p>
+        <p>Still, the experience stayed with me. It showed me the <strong>power of collective decision-making, experimentation, and taking action even without having everything figured out.</strong></p>
+      `,
+    },
+    {
+      id: 'commerce',
+      year: '2023',
+      title: 'Cross-Border Commerce Venture',
+      body: `
+        <p>In 2023, <strong>Argentina was extremely cheap in dollar terms, while Uruguay was relatively expensive.</strong> Some of my Uruguayan friends started asking me to buy things for them in Argentina and bring them over.</p>
+        <p>At some point, I saw an opportunity. I wanted to start making money, and I realized one of the easiest entry points was <strong>sports supplements.</strong></p>
+        <p>I created simple flyers, reached out to my network, and focused on <strong>rugby players, who are some of the biggest consumers of these products.</strong> Word spread quickly that I was offering good prices, and demand followed just as fast. Selling became surprisingly easy.</p>
+        <p>It didn't last long, though. Within a few months, <strong>prices between both countries began to align again</strong>, and the opportunity disappeared.</p>
+        <p>Still, it was a clear lesson in <strong>spotting inefficiencies, moving quickly, and taking advantage of timing.</strong></p>
+      `,
+    },
+    {
+      id: 'nx',
+      year: '2024',
+      title: 'Financial Planning Intern at NX',
+      body: `
+        <p><strong>Naranja X is an Argentine fintech</strong> that offers a digital platform to manage money, make payments, invest, and use cards, all from a mobile app. It's part of Grupo Galicia and <strong>competes directly with Mercado Pago.</strong> It's also consistently ranked as one of the best places to work for young professionals.</p>
+        <p>For its internship program, <strong>over 7,500 people applied, and only 10 were selected.</strong> I was one of them.</p>
+        <p>I joined as a Financial Planning Intern within the <strong>Financial Planning & Analysis team.</strong></p>
+        <p>My main responsibility was maintaining and updating one of the company's most important databases. It required constant coordination with multiple teams across the organization. <strong>There was a high level of responsibility, as many areas relied on the data I managed to make decisions.</strong></p>
+        <p>While the role wasn't always intellectually complex, it gave me something even more valuable, <strong>a broad understanding of how a fintech operates across different functions.</strong></p>
+        <p>In parallel, I worked on building <strong>Sankey diagrams for board-level presentations</strong>, supported accounting-related tasks, and developed strong technical skills using tools like <strong>Excel, Power BI, and the company's internal ERP system.</strong></p>
+        <p>More importantly, I learned how to <strong>work in a team, communicate across departments, and operate in a high-responsibility environment.</strong></p>
+        <p>It was an experience I genuinely loved. I was surrounded by talented, driven people, and it left a lasting impression on me. To this day, I still keep in sight the framed gift my team gave me when I left.</p>
+      `,
+    },
+    {
+      id: 'sanandres',
+      year: '2020 — 2024',
+      title: 'Universidad de San Andrés',
+      body: `
+        <p><strong>Universidad de San Andrés is consistently ranked among the top business schools in Latin America</strong> and has been the starting point for many of Argentina's most successful businessmen.</p>
+        <p>Studying <strong>Business Administration</strong> there gave me a strong academic foundation in strategy, finance, marketing, mathematics, operations, and organizational behavior.</p>
+        <p>But what truly stood out went beyond the curriculum.</p>
+        <p>San Andrés exposed me to an exceptional environment, professors, executives, and peers who constantly challenged the way I think. <strong>The culture of intellectual rigor and high standards</strong> shaped how I approach problems today, with structure, data, and clarity.</p>
+        <p>While studying, I was also doing things outside of university. During my time there, I completed courses through <strong>HarvardX and MITx</strong>, co-created a small investment fund with friends, ran a short-term supplements business, and worked as an intern at Naranja X.</p>
+        <p>Balancing all of this taught me how to <strong>manage my time, prioritize what matters, and operate effectively under pressure.</strong></p>
+        <p>It was also where I built meaningful relationships. I made close friends, strong professional connections, and developed great relationships with some professors. One of them, my finance professor, noticed my genuine interest in his field and <strong>invited me to join him in Omaha, Nebraska, for the Berkshire Hathaway Annual Meeting</strong>, where Warren Buffett speaks.</p>
+        <p>I wasn't able to attend due to financial constraints and limited funding options, but the invitation itself meant a lot. After the course ended, we continued meeting occasionally for coffee, having conversations that went far beyond the classroom.</p>
+        <p>In short, <strong>San Andrés didn't just give me knowledge, it gave me a way of thinking, a strong network, and the habit of constantly pushing myself beyond what's expected.</strong></p>
+      `,
+    },
+    {
+      id: 'zoppa',
+      year: '2025',
+      title: 'Founder & CEO at Zoppa',
+      body: `
+        <p>Zoppa started as a simple idea with an ambitious goal: <strong>to build a fashion marketplace that could compete with the biggest players</strong>, but without their structural limitations.</p>
+        <p>What made it different was not the brands or the interface, but <strong>the model behind it.</strong> While traditional fashion marketplaces operated with heavy fixed costs such as warehouses, large teams, inventory, and complex logistics, Zoppa was designed to be lean. By relying on technology and a different operational structure, we aimed to keep costs extremely low. More importantly, <strong>this was not something easily replicable by the companies we were competing against.</strong> Their entire infrastructure was built around high cost operations that could not be undone overnight.</p>
+        <p>I built Zoppa believing it had the potential to become a unicorn. In the end, I fell far short of that goal. It was a hard hit. But at the same time, <strong>it was one of the most defining years of my life.</strong> The experience forced me to grow in ways I could not have anticipated, and it gave me a level of learning that I will carry with me in everything I do next.</p>
+      `,
+    },
+    {
+      id: 'advisor',
+      year: '2026',
+      title: 'Soon',
+      body: `
+        <p style="color:var(--text-muted); font-style:italic;">This chapter is still being written. Check back soon.</p>
+      `,
+    },
+  ];
+
+  /* ── Navigation order ────────────────────────────────────────── */
+  const order = ['born','argentina','ucla','newman','pandemic','fund','commerce','nx','sanandres','zoppa'];
+
+  /* ── Render ──────────────────────────────────────────────────── */
+  function render() {
+    const hash = window.location.hash.replace('#', '') || '';
+    const data = milestones.find(m => m.id === hash);
+    const container = document.getElementById('detail-container');
+    const currentIdx = order.indexOf(hash);
+
+    // Point "Back to Timeline" to the specific card anchor
+    document.getElementById('nav-timeline-btn').href = `index.html#tl-${hash}`;
+
+    if (!data) {
+      container.innerHTML = `
+        <div class="not-found">
+          <h1>Milestone not found</h1>
+          <p>The story you're looking for doesn't exist. Head back to the portfolio.</p>
+          <a href="index.html" class="btn-primary">← Back to Portfolio</a>
+        </div>`;
+      return;
+    }
+
+    document.title = `${data.title} — Juan Bautista Alonso Lareo`;
+
+    const statsHtml = data.stats ? `
+      <div class="stats-row">
+        ${data.stats.map(s => `
+          <div class="stat-box">
+            <div class="stat-value">${s.value}</div>
+            <div class="stat-label">${s.label}</div>
+          </div>`).join('')}
+      </div>` : '';
+
+    const prevId  = currentIdx > 0 ? order[currentIdx - 1] : null;
+    const nextId  = currentIdx < order.length - 1 ? order[currentIdx + 1] : null;
+    const prevData = prevId ? milestones.find(m => m.id === prevId) : null;
+    const nextData = nextId ? milestones.find(m => m.id === nextId) : null;
+
+    const zoppaGridHtml = data.id === 'zoppa' ? `
+      <div class="zoppa-section-label">Deep Dives</div>
+      <div class="zoppa-grid">
+        ${[
+          { title: 'Zoppa Story',            hash: 'story' },
+          { title: 'Mistakes Made',          hash: 'mistakes' },
+          { title: 'What Worked',            hash: 'worked' },
+          { title: 'Lessons Learned',        hash: 'lessons' },
+          { title: 'Do Differently',         hash: 'differently' },
+          { title: 'Assumptions vs Reality', hash: 'assumptions' },
+          { title: 'Where I Was Lucky',      hash: 'lucky' },
+          { title: 'My Growth',              hash: 'growth' },
+          { title: 'Product Demo',           hash: 'demo' },
+        ].map(c => `
+          <a href="zoppa.html#${c.hash}" class="zoppa-card">
+            <div class="zoppa-card-title">${c.title}</div>
+            <div class="zoppa-card-arrow">→</div>
+          </a>`).join('')}
+      </div>` : '';
+
+    const navHtml = `
+      <div class="nav-milestones">
+        <a href="detail.html#${prevId || ''}" class="nav-milestone-btn ${prevData ? '' : 'disabled'}" style="text-align:left;">
+          ← Previous<br>
+          <strong>${prevData ? prevData.title : '—'}</strong>
+          <span>${prevData ? prevData.year : ''}</span>
+        </a>
+        <a href="detail.html#${nextId || ''}" class="nav-milestone-btn ${nextData ? '' : 'disabled'}" style="text-align:right;">
+          Next →<br>
+          <strong>${nextData ? nextData.title : '—'}</strong>
+          <span>${nextData ? nextData.year : ''}</span>
+        </a>
+      </div>`;
+
+    container.innerHTML = `
+      <div class="breadcrumb">
+        <a href="index.html">JBAL</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="index.html#story">My Story</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>${data.title}</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-year">${data.year}</div>
+        <h1>${data.title}</h1>
+        ${statsHtml}
+        <div class="detail-body">${data.body}</div>
+        ${zoppaGridHtml}
+      </div>
+
+      ${navHtml}
+    `;
+  }
+
+  render();
+  window.addEventListener('hashchange', render);
+</script>
+</body>
+</html>
