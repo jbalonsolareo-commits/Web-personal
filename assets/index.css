@@ -195,6 +195,9 @@
     }
     @media (max-width: 768px) {
       .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+      .hero-image-ring { width: 240px; height: 240px; }
+      .hero-buttons { justify-content: center; }
+      .hero-buttons .btn svg { display: inline-block; flex-shrink: 0; }
     }
 
     .hero-image-wrap { display: flex; justify-content: center; }
