@@ -58,6 +58,7 @@
   <ul class="nav-links">
     <li><a href="#hero">Home</a></li>
     <li><a href="#story">My Story</a></li>
+    <li><a href="detail.html#zoppa">ZOPPA</a></li>
     <li><a href="#qa">Q&amp;A</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -87,7 +88,7 @@
         </div>
       </div>
 
-      <div class="hero-content reveal" style="transition-delay:0.1s;">
+      <div class="hero-content reveal">
         <div class="status-badge" style="margin-bottom:20px;">
           <span class="status-dot"></span>
           Buenos Aires, Argentina
@@ -117,26 +118,35 @@
       </div>
     </div>
 
-    <!-- Scroll CTA -->
-    <div class="hero-cta-section reveal" style="transition-delay:0.25s;">
-      <p class="hero-cta-label">Explore</p>
-      <div class="hero-cta-grid">
-        <button class="big-nav-btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
-          <span class="big-nav-btn-icon">📖</span>
-          <div class="big-nav-btn-title">View my Story</div>
-          <div class="big-nav-btn-desc">From Montevideo to building Zoppa</div>
-          <span class="big-nav-btn-arrow">→</span>
-        </button>
-        <button class="big-nav-btn" onclick="document.getElementById('qa').scrollIntoView({behavior:'smooth'})">
-          <span class="big-nav-btn-icon">💬</span>
-          <div class="big-nav-btn-title">Questions &amp; Answers</div>
-          <div class="big-nav-btn-desc">Get to know me better</div>
-          <span class="big-nav-btn-arrow">→</span>
-        </button>
-      </div>
-    </div>
   </div>
 </section>
+
+<!-- EXPLORE -->
+<div class="hero-cta-section reveal">
+  <span class="tag" style="font-size:1.1rem; padding:8px 22px; display:inline-block; margin-bottom:28px;">Explore</span>
+  <div class="container">
+    <div class="hero-cta-grid" style="grid-template-columns: 1fr 1fr 1fr; max-width: 100%;">
+      <button class="big-nav-btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+        <span class="big-nav-btn-icon">📖</span>
+        <div class="big-nav-btn-title">View my Story</div>
+        <div class="big-nav-btn-desc">From Montevideo to building Zoppa</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </button>
+      <a href="detail.html#zoppa" class="big-nav-btn" style="text-decoration:none;">
+        <span class="big-nav-btn-icon">👟</span>
+        <div class="big-nav-btn-title">ZOPPA</div>
+        <div class="big-nav-btn-desc">The full story: wins, failures, and everything in between</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </a>
+      <button class="big-nav-btn" onclick="document.getElementById('qa').scrollIntoView({behavior:'smooth'})">
+        <span class="big-nav-btn-icon">💬</span>
+        <div class="big-nav-btn-title">Questions &amp; Answers</div>
+        <div class="big-nav-btn-desc">Get to know me better</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </button>
+    </div>
+  </div>
+</div>
 
 <!-- TIMELINE — ordered by END year -->
 <section id="story">
@@ -386,19 +396,44 @@
     bar.style.width = (scrolled / total * 100) + '%';
   }, { passive: true });
 
+  /* Timeline card stagger + directional reveals — set BEFORE observer */
+  document.querySelectorAll('.timeline-item').forEach((item, i) => {
+    const card = item.querySelector('.timeline-card.reveal');
+    if (!card) return;
+    const dx = i % 2 === 0 ? -28 : 28;
+    card.style.transform = `translateX(${dx}px) translateY(16px)`;
+    card.style.transitionDelay = (i * 0.08) + 's';
+  });
+
   /* Scroll reveal */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      if (e.isIntersecting) {
+        e.target.style.transform = ''; /* clear inline override so CSS .visible takes over */
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
     });
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   window.addEventListener('load', () => {
-    document.querySelectorAll('#hero .reveal').forEach(el => {
-      setTimeout(() => el.classList.add('visible'), 100);
+    const heroReveals = [...document.querySelectorAll('#hero .reveal')];
+    const delays = [80, 260];
+    heroReveals.forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), delays[i] ?? 260);
     });
+    const heroButtons = document.querySelector('.hero-buttons');
+    if (heroButtons) {
+      heroButtons.style.opacity = '0';
+      heroButtons.style.transform = 'translateY(16px)';
+      heroButtons.style.transition = 'opacity 0.6s cubic-bezier(0.16,1,0.3,1) 0.45s, transform 0.6s cubic-bezier(0.16,1,0.3,1) 0.45s';
+      setTimeout(() => {
+        heroButtons.style.opacity = '1';
+        heroButtons.style.transform = 'translateY(0)';
+      }, 460);
+    }
   });
 
   /* Accordion */

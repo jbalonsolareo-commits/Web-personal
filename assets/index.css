@@ -248,6 +248,7 @@
 
     /* HERO */
     #hero {
+      background: var(--surface) !important;
       min-height: 100vh;
       padding: 120px 0 80px;
       display: flex;
@@ -388,8 +389,8 @@
 
     /* Scroll CTA */
     .hero-cta-section {
-      margin-top: 100px;
-      padding-top: 60px;
+      padding: 60px 0;
+      background: var(--bg);
       border-top: 1px solid var(--border);
       text-align: center;
     }
@@ -408,7 +409,7 @@
       max-width: 680px;
       margin: 0 auto;
     }
-    @media (max-width: 600px) { .hero-cta-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .hero-cta-grid { grid-template-columns: 1fr !important; max-width: 100% !important; } }
 
     .big-nav-btn {
       padding: 28px 32px;
@@ -458,11 +459,12 @@
     .section-header h2 { margin-bottom: 12px; }
     .section-header p { max-width: 520px; margin: 0 auto; }
 
-    section { padding: 100px 0; }
-    section:nth-child(even) { background: var(--surface); }
+    section { padding: 100px 0; background: var(--surface); box-shadow: inset 0 1px 0 var(--border), inset 0 60px 40px -40px rgba(5,9,20,0.4); }
+    section:nth-child(even) { background: var(--bg); box-shadow: inset 0 1px 0 var(--border), inset 0 60px 40px -40px rgba(12,18,32,0.4); }
+    #hero { box-shadow: none; }
 
     /* TIMELINE */
-    #story { position: relative; }
+    #story { position: relative; background: var(--surface) !important; }
     .timeline { position: relative; max-width: 900px; margin: 0 auto; }
     .timeline::before {
       content: '';
@@ -641,6 +643,26 @@
     .qa-list .qa-item:nth-child(3) { transition-delay: 0.14s; }
     .qa-list .qa-item:nth-child(4) { transition-delay: 0.21s; }
     .qa-list .qa-item:nth-child(5) { transition-delay: 0.28s; }
+
+
+    /* Timeline dot pulses */
+    @keyframes pulse-accent {
+      0%, 100% { box-shadow: 0 0 0 3px rgba(59,130,246,0.25), 0 0 20px rgba(59,130,246,0.3); }
+      50%       { box-shadow: 0 0 0 5px rgba(59,130,246,0.15), 0 0 32px rgba(59,130,246,0.5); }
+    }
+    @keyframes pulse-accent-purple {
+      0%, 100% { box-shadow: 0 0 0 3px rgba(168,85,247,0.2), 0 0 20px rgba(168,85,247,0.25); }
+      50%       { box-shadow: 0 0 0 5px rgba(168,85,247,0.12), 0 0 32px rgba(168,85,247,0.45); }
+    }
+    .timeline-dot                        { animation: pulse-accent 2.5s ease-in-out infinite; }
+    #tl-advisor .timeline-dot            { animation: pulse-accent-purple 2s ease-in-out infinite; }
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .hero-image-ring { animation: none; }
+      .timeline-dot    { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
 
     footer {
       background: var(--bg);

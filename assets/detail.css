@@ -292,12 +292,17 @@
   
     /* ── Zoppa Deep Dives Grid ─────────────────────────────────── */
     .zoppa-section-label {
-      font-size: 0.72rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--accent-glow);
       margin: 40px 0 16px;
+      display: inline-block;
+      background: var(--accent-soft);
+      border: 1px solid rgba(96,165,250,0.2);
+      padding: 4px 14px;
+      border-radius: 20px;
     }
     .zoppa-grid {
       display: grid;
@@ -306,7 +311,7 @@
       margin-bottom: 32px;
     }
     .zoppa-card {
-      background: var(--card);
+      background: var(--bg);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 24px 20px;
