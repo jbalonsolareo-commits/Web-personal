@@ -152,7 +152,7 @@
       line-height: 1.85;
     }
     .detail-body p + p { margin-top: 16px; }
-    .detail-body strong { color: var(--text); }
+    .detail-body strong { color: #cbd5e1; }
     .detail-body .highlight {
       display: inline-block;
       background: var(--accent-soft);

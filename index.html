@@ -3,7 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Bautista Alonso Lareo</title>
+  <title>Juan Bautista Alonso Lareo — Entrepreneur &amp; Founder, Buenos Aires</title>
+  <meta name="description" content="Personal site of Juan Bautista Alonso Lareo — entrepreneur, co-founder of Zoppa, ex Naranja X, Business Administration graduate at Universidad de San Andrés, based in Buenos Aires." />
+  <meta name="author" content="Juan Bautista Alonso Lareo" />
+  <link rel="canonical" href="https://juanbautistaalonsolareo.com/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://juanbautistaalonsolareo.com/" />
+  <meta property="og:title" content="Juan Bautista Alonso Lareo — Entrepreneur &amp; Founder" />
+  <meta property="og:description" content="Co-founded Zoppa, ex Naranja X Financial Planning intern, Business Administration graduate at UdeSA. Based in Buenos Aires." />
+  <meta property="og:image" content="https://juanbautistaalonsolareo.com/assets/profile.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Juan Bautista Alonso Lareo — Entrepreneur &amp; Founder" />
+  <meta name="twitter:description" content="Co-founded Zoppa, ex Naranja X Financial Planning intern, Business Administration graduate at UdeSA. Based in Buenos Aires." />
+  <meta name="twitter:image" content="https://juanbautistaalonsolareo.com/assets/profile.jpg" />
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Bautista Alonso Lareo",
+    "jobTitle": "Entrepreneur & Founder",
+    "description": "Co-founded Zoppa, a fashion marketplace. Ex Financial Planning intern at Naranja X. Business Administration graduate at Universidad de San Andrés.",
+    "url": "https://juanbautistaalonsolareo.com",
+    "sameAs": ["https://www.linkedin.com/in/juanbautistaalonsolareo/"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad de San Andrés"
+    },
+    "email": "jbalonsolareo@gmail.com",
+    "knowsAbout": ["entrepreneurship", "fashion e-commerce", "fintech", "investment", "startup strategy", "artificial intelligence", "blockchain"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -22,7 +60,16 @@
     <li><a href="#qa">Q&amp;A</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#hero">Home</a>
+  <a href="#story">My Story</a>
+  <a href="#qa">Q&amp;A</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -256,23 +303,43 @@
     <div class="qa-list">
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What are your weaknesses?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I tend to have low attention to repetitive tasks and can sometimes be disorganized. However, I constantly work on improving my systems and structure.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>Short attention span, especially with repetitive tasks.</li>
+          <li>Not naturally organized.</li>
+          <li>Working on improving public speaking.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What are your strengths?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I am highly resilient, creative, and proactive. I take ownership and move fast when I see opportunities.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>I'm deeply curious and always looking to learn.</li>
+          <li>I'm resilient, I don't give up easily when things get tough.</li>
+          <li>I'm creative and really enjoy finding unconventional solutions.</li>
+          <li>I'm proactive and like to take initiative.</li>
+        </ul></div></div>
       </div>
-<div class="qa-item reveal">
+      <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What do you do in your free time?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I enjoy watching sports, spending time with friends and family, and listening to podcasts.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>Spending time with friends and family.</li>
+          <li>Playing and watching sports.</li>
+          <li>Listening to podcasts, mainly interviews with successful professionals.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What sports do you practice?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">Football, gym training, tennis, padel, golf, and surfing.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>I try to stay very active and usually do around five sports-related activities per week.</li>
+          <li>Football, tennis, padel, golf, surfing, and gym.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What are your passions?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">Sports and studying the stories of highly successful individuals.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>I've always been passionate about new technologies and tend to adopt them early, such as AI and Blockchain.</li>
+          <li>I enjoy learning about successful companies and individuals.</li>
+          <li>I love competing in sports.</li>
+        </ul></div></div>
       </div>
     </div>
   </div>
@@ -306,6 +373,8 @@
 <footer>
   <p>© 2026 <span>Juan Bautista Alonso Lareo</span></p>
 </footer>
+
+<button id="scroll-top" aria-label="Back to top">↑</button>
 
 <script>
   /* Progress bar */
@@ -350,7 +419,22 @@
     });
   });
 
-  /* Profile image fallback — shows initials if profile.jpg not found */
+  /* Hamburger menu */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+  });
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileNav.classList.remove('open'));
+  });
+
+  /* Scroll to top */
+  const scrollTopBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 </body>
 </html>
