@@ -42,6 +42,56 @@
     "knowsAbout": ["entrepreneurship", "fashion e-commerce", "fintech", "investment", "startup strategy", "artificial intelligence", "blockchain"]
   }
   </script>
+  <!-- JSON-LD WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Juan Bautista Alonso Lareo",
+    "url": "https://juanbautistaalonsolareo.com",
+    "description": "Personal site of Juan Bautista Alonso Lareo — entrepreneur, co-founder of Zoppa, ex Naranja X, Business Administration graduate at UdeSA.",
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "My Story",
+        "url": "https://juanbautistaalonsolareo.com/#story",
+        "description": "The story of Juan Bautista Alonso Lareo — from Montevideo to Buenos Aires, UCLA, Naranja X, and founding Zoppa."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Zoppa",
+        "url": "https://juanbautistaalonsolareo.com/detail.html#zoppa",
+        "description": "Deep dive into Zoppa — the fashion marketplace co-founded by Juan Bautista Alonso Lareo."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Questions & Answers",
+        "url": "https://juanbautistaalonsolareo.com/#qa",
+        "description": "Get to know Juan Bautista Alonso Lareo better through questions and answers."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Contact",
+        "url": "https://juanbautistaalonsolareo.com/#contact",
+        "description": "Get in touch with Juan Bautista Alonso Lareo."
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD SiteNavigationElement Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Site Navigation",
+    "itemListElement": [
+      { "@type": "SiteNavigationElement", "position": 1, "name": "My Story", "url": "https://juanbautistaalonsolareo.com/#story" },
+      { "@type": "SiteNavigationElement", "position": 2, "name": "Zoppa", "url": "https://juanbautistaalonsolareo.com/detail.html#zoppa" },
+      { "@type": "SiteNavigationElement", "position": 3, "name": "Questions & Answers", "url": "https://juanbautistaalonsolareo.com/#qa" },
+      { "@type": "SiteNavigationElement", "position": 4, "name": "Contact", "url": "https://juanbautistaalonsolareo.com/#contact" }
+    ]
+  }
+  </script>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -313,11 +363,11 @@
 
     <div class="qa-list">
       <div class="qa-item reveal">
-        <button class="qa-trigger"><span class="qa-question">What are your weaknesses?</span><span class="qa-icon">+</span></button>
+        <button class="qa-trigger"><span class="qa-question">What are the areas you're currently working on improving?</span><span class="qa-icon">+</span></button>
         <div class="qa-body"><div class="qa-body-inner"><ul>
-          <li>Short attention span, especially with repetitive tasks.</li>
-          <li>Not naturally organized.</li>
-          <li>Working on improving public speaking.</li>
+          <li>Organization doesn't come naturally to me, which has pushed me to build intentional systems and habits.</li>
+          <li>Public speaking is something I'm working on. I'm stepping into more situations that challenge me in that space.</li>
+          <li>I'm working on improving my attention span by building systems around how I structure my tasks and environment.</li>
         </ul></div></div>
       </div>
       <div class="qa-item reveal">
@@ -327,6 +377,7 @@
           <li>I'm resilient, I don't give up easily when things get tough.</li>
           <li>I'm creative and really enjoy finding unconventional solutions.</li>
           <li>I'm proactive and like to take initiative.</li>
+          <li>I'm self-critical in a constructive way. I hold myself to high standards and constantly look for ways to improve.</li>
         </ul></div></div>
       </div>
       <div class="qa-item reveal">
