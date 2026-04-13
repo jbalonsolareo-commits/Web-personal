@@ -110,6 +110,7 @@
     <li><a href="#story">My Story</a></li>
     <li><a href="detail.html#zoppa">ZOPPA</a></li>
     <li><a href="#qa">Q&amp;A</a></li>
+    <li><a href="#cv">CV</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
@@ -120,6 +121,7 @@
   <a href="#hero">Home</a>
   <a href="#story">My Story</a>
   <a href="#qa">Q&amp;A</a>
+  <a href="#cv">CV</a>
   <a href="#contact">Contact</a>
 </div>
 
@@ -175,7 +177,7 @@
 <div class="hero-cta-section reveal">
   <span class="tag" style="font-size:1.1rem; padding:8px 22px; display:inline-block; margin-bottom:28px;">Explore</span>
   <div class="container">
-    <div class="hero-cta-grid" style="grid-template-columns: 1fr 1fr 1fr; max-width: 100%;">
+    <div class="hero-cta-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr; max-width: 100%;">
       <button class="big-nav-btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
         <span class="big-nav-btn-icon">📖</span>
         <div class="big-nav-btn-title">View my Story</div>
@@ -192,6 +194,12 @@
         <span class="big-nav-btn-icon">💬</span>
         <div class="big-nav-btn-title">Questions &amp; Answers</div>
         <div class="big-nav-btn-desc">Get to know me better</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </button>
+      <button class="big-nav-btn" onclick="document.getElementById('cv').scrollIntoView({behavior:'smooth'})">
+        <span class="big-nav-btn-icon">📄</span>
+        <div class="big-nav-btn-title">Download CV</div>
+        <div class="big-nav-btn-desc">English &amp; Spanish versions</div>
         <span class="big-nav-btn-arrow">→</span>
       </button>
     </div>
@@ -403,6 +411,41 @@
           <li>I love competing in sports.</li>
         </ul></div></div>
       </div>
+      <div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">Why did you build this website?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>To demonstrate that I'm comfortable working with AI tools and can use them to build real, functional products.</li>
+          <li>To give people a deeper look into my experiences, particularly Zoppa, beyond what fits on a resume.</li>
+          <li>To show that I'm creative and proactive.</li>
+        </ul></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CV -->
+<section id="cv">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" style="font-size:1.1rem; padding:8px 22px;">Download CV</span>
+    </div>
+    <div class="cv-grid reveal">
+      <a href="assets/cv-en.pdf" download="CV (Eng) - Alonso Lareo Juan Bautista.pdf" class="cv-card">
+        <div class="cv-card-lang">English</div>
+        <div class="cv-card-sub">PDF · Resume</div>
+        <span class="cv-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </span>
+      </a>
+      <a href="assets/cv-es.pdf" download="CV (esp) - Alonso Lareo Juan Bautista.pdf" class="cv-card">
+        <div class="cv-card-lang">Español</div>
+        <div class="cv-card-sub">PDF · CV</div>
+        <span class="cv-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar
+        </span>
+      </a>
     </div>
   </div>
 </section>
