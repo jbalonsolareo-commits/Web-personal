@@ -416,7 +416,9 @@
      answers with Claude. On file:// — or whenever the API fails —
      it falls back to the keyword engine below, so the widget
      always works. */
-  const API_URL = '/api/buti';
+  // Absolute URL: the site is served from GitHub Pages (juanbautistaalonsolareo.com)
+  // while the AI function lives on Vercel — CORS is handled server-side.
+  const API_URL = 'https://bauti-web.vercel.app/api/buti';
   const AI_AVAILABLE = /^https?:$/.test(location.protocol);
 
   // Allow only the formatting BUTI is told to use; strip anything active.

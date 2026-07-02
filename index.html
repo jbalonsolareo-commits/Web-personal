@@ -3,7 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Bautista Alonso Lareo</title>
+  <title>Juan Bautista Alonso Lareo — Personal Website</title>
+  <meta name="description" content="Personal site of Juan Bautista Alonso Lareo — entrepreneur, co-founder of Zoppa, ex Naranja X, Business Administration graduate at Universidad de San Andrés, based in Buenos Aires." />
+  <meta name="author" content="Juan Bautista Alonso Lareo" />
+  <link rel="canonical" href="https://juanbautistaalonsolareo.com/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://juanbautistaalonsolareo.com/" />
+  <meta property="og:title" content="Juan Bautista Alonso Lareo — Personal Website" />
+  <meta property="og:description" content="Co-founded Zoppa, ex Naranja X Financial Planning intern, Business Administration graduate at UdeSA. Based in Buenos Aires." />
+  <meta property="og:image" content="https://juanbautistaalonsolareo.com/assets/profile.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Juan Bautista Alonso Lareo — Personal Website" />
+  <meta name="twitter:description" content="Co-founded Zoppa, ex Naranja X Financial Planning intern, Business Administration graduate at UdeSA. Based in Buenos Aires." />
+  <meta name="twitter:image" content="https://juanbautistaalonsolareo.com/assets/profile.jpg" />
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Bautista Alonso Lareo",
+    "jobTitle": "Entrepreneur & Founder",
+    "description": "Co-founded Zoppa, a fashion marketplace. Ex Financial Planning intern at Naranja X. Business Administration graduate at Universidad de San Andrés.",
+    "url": "https://juanbautistaalonsolareo.com",
+    "sameAs": ["https://www.linkedin.com/in/juanbautistaalonsolareo/"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad de San Andrés"
+    },
+    "email": "jbalonsolareo@gmail.com",
+    "knowsAbout": ["entrepreneurship", "fashion e-commerce", "fintech", "investment", "startup strategy", "artificial intelligence", "blockchain"]
+  }
+  </script>
+  <!-- JSON-LD WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Juan Bautista Alonso Lareo",
+    "url": "https://juanbautistaalonsolareo.com",
+    "description": "Personal site of Juan Bautista Alonso Lareo — entrepreneur, co-founder of Zoppa, ex Naranja X, Business Administration graduate at UdeSA.",
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "My Story",
+        "url": "https://juanbautistaalonsolareo.com/#story",
+        "description": "The story of Juan Bautista Alonso Lareo — from Montevideo to Buenos Aires, UCLA, Naranja X, and founding Zoppa."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Zoppa",
+        "url": "https://juanbautistaalonsolareo.com/detail.html#zoppa",
+        "description": "Deep dive into Zoppa — the fashion marketplace co-founded by Juan Bautista Alonso Lareo."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Questions & Answers",
+        "url": "https://juanbautistaalonsolareo.com/#qa",
+        "description": "Get to know Juan Bautista Alonso Lareo better through questions and answers."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Contact",
+        "url": "https://juanbautistaalonsolareo.com/#contact",
+        "description": "Get in touch with Juan Bautista Alonso Lareo."
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD SiteNavigationElement Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Site Navigation",
+    "itemListElement": [
+      { "@type": "SiteNavigationElement", "position": 1, "name": "My Story", "url": "https://juanbautistaalonsolareo.com/#story" },
+      { "@type": "SiteNavigationElement", "position": 2, "name": "Zoppa", "url": "https://juanbautistaalonsolareo.com/detail.html#zoppa" },
+      { "@type": "SiteNavigationElement", "position": 3, "name": "Questions & Answers", "url": "https://juanbautistaalonsolareo.com/#qa" },
+      { "@type": "SiteNavigationElement", "position": 4, "name": "Contact", "url": "https://juanbautistaalonsolareo.com/#contact" }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -19,10 +108,22 @@
   <ul class="nav-links">
     <li><a href="#hero">Home</a></li>
     <li><a href="#story">My Story</a></li>
+    <li><a href="detail.html#zoppa">ZOPPA</a></li>
     <li><a href="#qa">Q&amp;A</a></li>
+    <li><a href="#cv">CV</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#hero">Home</a>
+  <a href="#story">My Story</a>
+  <a href="#qa">Q&amp;A</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -39,7 +140,7 @@
         </div>
       </div>
 
-      <div class="hero-content reveal" style="transition-delay:0.1s;">
+      <div class="hero-content reveal">
         <div class="status-badge" style="margin-bottom:20px;">
           <span class="status-dot"></span>
           Buenos Aires, Argentina
@@ -69,26 +170,41 @@
       </div>
     </div>
 
-    <!-- Scroll CTA -->
-    <div class="hero-cta-section reveal" style="transition-delay:0.25s;">
-      <p class="hero-cta-label">Explore</p>
-      <div class="hero-cta-grid">
-        <button class="big-nav-btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
-          <span class="big-nav-btn-icon">📖</span>
-          <div class="big-nav-btn-title">View my Story</div>
-          <div class="big-nav-btn-desc">From Montevideo to building Zoppa</div>
-          <span class="big-nav-btn-arrow">→</span>
-        </button>
-        <button class="big-nav-btn" onclick="document.getElementById('qa').scrollIntoView({behavior:'smooth'})">
-          <span class="big-nav-btn-icon">💬</span>
-          <div class="big-nav-btn-title">Questions &amp; Answers</div>
-          <div class="big-nav-btn-desc">Get to know me better</div>
-          <span class="big-nav-btn-arrow">→</span>
-        </button>
-      </div>
-    </div>
   </div>
 </section>
+
+<!-- EXPLORE -->
+<div class="hero-cta-section reveal">
+  <span class="tag" style="font-size:1.1rem; padding:8px 22px; display:inline-block; margin-bottom:28px;">Explore</span>
+  <div class="container">
+    <div class="hero-cta-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr; max-width: 100%;">
+      <button class="big-nav-btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+        <span class="big-nav-btn-icon">📖</span>
+        <div class="big-nav-btn-title">View my Story</div>
+        <div class="big-nav-btn-desc">From Montevideo to building Zoppa</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </button>
+      <a href="detail.html#zoppa" class="big-nav-btn" style="text-decoration:none;">
+        <span class="big-nav-btn-icon">👟</span>
+        <div class="big-nav-btn-title">ZOPPA</div>
+        <div class="big-nav-btn-desc">The full story: wins, failures, and everything in between</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </a>
+      <button class="big-nav-btn" onclick="document.getElementById('qa').scrollIntoView({behavior:'smooth'})">
+        <span class="big-nav-btn-icon">💬</span>
+        <div class="big-nav-btn-title">Questions &amp; Answers</div>
+        <div class="big-nav-btn-desc">Get to know me better</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </button>
+      <button class="big-nav-btn" onclick="document.getElementById('cv').scrollIntoView({behavior:'smooth'})">
+        <span class="big-nav-btn-icon">📄</span>
+        <div class="big-nav-btn-title">Download CV</div>
+        <div class="big-nav-btn-desc">English &amp; Spanish versions</div>
+        <span class="big-nav-btn-arrow">→</span>
+      </button>
+    </div>
+  </div>
+</div>
 
 <!-- TIMELINE — ordered by END year -->
 <section id="story">
@@ -141,8 +257,8 @@
         <div class="timeline-spacer"><div class="timeline-dot"></div></div>
         <div class="timeline-card reveal">
           <div class="timeline-year">2008 — 2019</div>
-          <div class="timeline-title">Colegio Newman</div>
-          <p class="timeline-desc">Attended <strong>Colegio Newman</strong>, one of the most recognized schools in Argentina.</p>
+          <div class="timeline-title">Cardenal Newman School</div>
+          <p class="timeline-desc">Attended <strong>Cardenal Newman School</strong>, one of the most recognized schools in Argentina.</p>
           <a href="detail.html#newman" class="btn-see-more">See more →</a>
         </div>
       </div>
@@ -255,33 +371,81 @@
 
     <div class="qa-list">
       <div class="qa-item reveal">
-        <button class="qa-trigger"><span class="qa-question">What are your weaknesses?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I tend to have low attention to repetitive tasks and can sometimes be disorganized. However, I constantly work on improving my systems and structure.</div></div>
+        <button class="qa-trigger"><span class="qa-question">What are the areas you're currently working on improving?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>Organization doesn't come naturally to me, which has pushed me to build intentional systems and habits.</li>
+          <li>Public speaking is something I'm working on. I'm stepping into more situations that challenge me in that space.</li>
+          <li>I'm working on improving my attention span by building systems around how I structure my tasks and environment.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What are your strengths?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I am highly resilient, creative, and proactive. I take ownership and move fast when I see opportunities.</div></div>
-      </div>
-      <div class="qa-item reveal">
-        <button class="qa-trigger"><span class="qa-question">What mistakes did you make at Zoppa?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I initially lacked structure and underestimated the importance of product organization. These lessons helped me become a much stronger founder.</div></div>
-      </div>
-      <div class="qa-item reveal">
-        <button class="qa-trigger"><span class="qa-question">What were your key achievements at Zoppa?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">Successfully built strategic partnerships, convinced premium brands to join the platform, and drove growth through innovative marketing strategies and international brand expansion.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>I'm deeply curious and always looking to learn.</li>
+          <li>I'm resilient, I don't give up easily when things get tough.</li>
+          <li>I'm creative and really enjoy finding unconventional solutions.</li>
+          <li>I'm proactive and like to take initiative.</li>
+          <li>I'm self-critical in a constructive way. I hold myself to high standards and constantly look for ways to improve.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What do you do in your free time?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">I enjoy watching sports, spending time with friends and family, and listening to podcasts.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>Spending time with friends and family.</li>
+          <li>Playing and watching sports.</li>
+          <li>Listening to podcasts, mainly interviews with successful professionals.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What sports do you practice?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">Football, gym training, tennis, padel, golf, and surfing.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>I try to stay very active and usually do around five sports-related activities per week.</li>
+          <li>Football, tennis, padel, golf, surfing, and gym.</li>
+        </ul></div></div>
       </div>
       <div class="qa-item reveal">
         <button class="qa-trigger"><span class="qa-question">What are your passions?</span><span class="qa-icon">+</span></button>
-        <div class="qa-body"><div class="qa-body-inner">Sports and studying the stories of highly successful individuals.</div></div>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>I've always been passionate about new technologies and tend to adopt them early, such as AI and Blockchain.</li>
+          <li>I enjoy learning about successful companies and individuals.</li>
+          <li>I love competing in sports.</li>
+        </ul></div></div>
       </div>
+      <div class="qa-item reveal">
+        <button class="qa-trigger"><span class="qa-question">Why did you build this website?</span><span class="qa-icon">+</span></button>
+        <div class="qa-body"><div class="qa-body-inner"><ul>
+          <li>To demonstrate that I'm comfortable working with AI tools and can use them to build real, functional products.</li>
+          <li>To give people a deeper look into my experiences, particularly Zoppa, beyond what fits on a resume.</li>
+          <li>To show that I'm creative and proactive.</li>
+        </ul></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CV -->
+<section id="cv">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" style="font-size:1.1rem; padding:8px 22px;">Download CV</span>
+    </div>
+    <div class="cv-grid reveal">
+      <a href="https://wa.me/5491158154871?text=Hi!%20I%27d%20like%20to%20see%20your%20CV." target="_blank" rel="noopener" class="cv-card">
+        <div class="cv-card-lang">English</div>
+        <div class="cv-card-sub">PDF · Resume</div>
+        <span class="cv-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </span>
+      </a>
+      <a href="https://wa.me/5491158154871?text=Hola!%20Me%20gustar%C3%ADa%20ver%20tu%20CV." target="_blank" rel="noopener" class="cv-card">
+        <div class="cv-card-lang">Español</div>
+        <div class="cv-card-sub">PDF · CV</div>
+        <span class="cv-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar
+        </span>
+      </a>
     </div>
   </div>
 </section>
@@ -292,7 +456,7 @@
     <div class="contact-inner reveal">
       <span class="tag" style="margin-bottom:20px; display:inline-block;">Contact</span>
       <h2>Let's connect.</h2>
-      <p>Whether you're building something new, looking for a collaborator, or just want to talk — I'm always open to interesting conversations.</p>
+      <p>Whether you're looking for a collaborator, building something new or just want to talk , I'm always open to interesting conversations.</p>
       <div class="contact-buttons">
         <a href="https://wa.me/5491158154871" target="_blank" rel="noopener" class="btn btn-primary">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.563 4.137 1.542 5.87L.057 23.88a.5.5 0 00.617.601l6.222-1.636A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.094-1.422l-.365-.216-3.786.996 1.01-3.685-.237-.38A9.818 9.818 0 1112 21.818z"/></svg>
@@ -315,6 +479,8 @@
   <p>© 2026 <span>Juan Bautista Alonso Lareo</span></p>
 </footer>
 
+<button id="scroll-top" aria-label="Back to top">↑</button>
+
 <script>
   /* Progress bar */
   const bar = document.getElementById('progress-bar');
@@ -324,19 +490,44 @@
     bar.style.width = (scrolled / total * 100) + '%';
   }, { passive: true });
 
+  /* Timeline card stagger + directional reveals — set BEFORE observer */
+  document.querySelectorAll('.timeline-item').forEach((item, i) => {
+    const card = item.querySelector('.timeline-card.reveal');
+    if (!card) return;
+    const dx = i % 2 === 0 ? -28 : 28;
+    card.style.transform = `translateX(${dx}px) translateY(16px)`;
+    card.style.transitionDelay = (i * 0.08) + 's';
+  });
+
   /* Scroll reveal */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      if (e.isIntersecting) {
+        e.target.style.transform = ''; /* clear inline override so CSS .visible takes over */
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
     });
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   window.addEventListener('load', () => {
-    document.querySelectorAll('#hero .reveal').forEach(el => {
-      setTimeout(() => el.classList.add('visible'), 100);
+    const heroReveals = [...document.querySelectorAll('#hero .reveal')];
+    const delays = [80, 260];
+    heroReveals.forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), delays[i] ?? 260);
     });
+    const heroButtons = document.querySelector('.hero-buttons');
+    if (heroButtons) {
+      heroButtons.style.opacity = '0';
+      heroButtons.style.transform = 'translateY(16px)';
+      heroButtons.style.transition = 'opacity 0.6s cubic-bezier(0.16,1,0.3,1) 0.45s, transform 0.6s cubic-bezier(0.16,1,0.3,1) 0.45s';
+      setTimeout(() => {
+        heroButtons.style.opacity = '1';
+        heroButtons.style.transform = 'translateY(0)';
+      }, 460);
+    }
   });
 
   /* Accordion */
@@ -358,7 +549,22 @@
     });
   });
 
-  /* Profile image fallback — shows initials if profile.jpg not found */
+  /* Hamburger menu */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+  });
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileNav.classList.remove('open'));
+  });
+
+  /* Scroll to top */
+  const scrollTopBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 <script src="assets/buti.js" defer></script>
 </body>

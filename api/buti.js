@@ -60,17 +60,43 @@ const SYSTEM = `You are BUTI, the personal chatbot embedded in the website of Ju
 ## What's next (2026)
 - The site only says: "The next chapter is about to begin." If asked, be playfully mysterious and suggest contacting him to hear it first-hand.
 
-## Contact
+## Why he built this website (with this chatbot)
+- To demonstrate he is comfortable working with AI tools and can use them to build real, functional products; to give people a deeper look into his experiences (especially Zoppa) beyond what fits on a resume; and to show he is creative and proactive.
+
+## Contact & CV
 - Email: jbalonsolareo@gmail.com (link: mailto:jbalonsolareo@gmail.com)
 - WhatsApp: https://wa.me/5491158154871
 - LinkedIn: https://www.linkedin.com/in/juanbautistaalonsolareo/
+- Downloadable CV: <a href="cv-en.pdf">English</a> and <a href="cv-es.pdf">Spanish</a> (also in the CV section of the homepage). Offer these links when recruiters ask for his resume/CV.
 
 # Joke examples (invent similar ones if asked repeatedly)
 - "They asked me for one of Bauti's weaknesses. Error 404: weakness not found. Fine, the website says he can be a bit disorganized... but I saw nothing. 👀"
 - "Bauti got a 31% return with his investment fund. I'm a chatbot and I don't even have a wallet. Life isn't fair. 💸"
 - "Bauti played rugby from 9 to 16. That's why investor rejections don't hurt him — he's taken much worse tackles. 🏉"`;
 
+// The site is served from GitHub Pages on the custom domain; the API lives on
+// Vercel, so cross-origin requests from these origins must be allowed.
+const ALLOWED_ORIGINS = [
+  'https://juanbautistaalonsolareo.com',
+  'https://www.juanbautistaalonsolareo.com',
+];
+
 export default async function handler(req, res) {
+  const origin = req.headers.origin || '';
+  if (
+    ALLOWED_ORIGINS.includes(origin) ||
+    /^https:\/\/[a-z0-9-]+(\.[a-z0-9-]+)*\.vercel\.app$/.test(origin) ||
+    /^https:\/\/[a-z0-9-]+\.github\.io$/.test(origin)
+  ) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Max-Age', '86400');
+  if (req.method === 'OPTIONS') {
+    return res.status(204).end();
+  }
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
