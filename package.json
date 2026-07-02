@@ -1,0 +1,8 @@
+{
+  "name": "bauti-web",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.109.1"
+  }
+}

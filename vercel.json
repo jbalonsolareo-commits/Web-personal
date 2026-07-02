@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/buti.js": {
+      "maxDuration": 30
+    }
+  }
+}
