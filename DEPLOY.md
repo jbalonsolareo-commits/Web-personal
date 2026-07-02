@@ -51,3 +51,5 @@ info de tu web y sin hablar mal de Bauti jamás).
   constante `SYSTEM` dentro de `api/buti.js`. Si cambiás la web, actualizá ahí.
 - **Probar localmente con IA:** `vercel dev` en la carpeta del proyecto
   (después de `vercel login` y de configurar la variable de entorno).
+
+> Conexion automatica GitHub -> Vercel activada el 2/7/2026. Cada push a main deploya solo.
