@@ -418,7 +418,9 @@
      always works. */
   // Absolute URL: the site is served from GitHub Pages (juanbautistaalonsolareo.com)
   // while the AI function lives on Vercel — CORS is handled server-side.
-  const API_URL = 'https://bauti-web.vercel.app/api/buti';
+  // Team-scoped alias: auto-updated on every production deploy and immune
+  // to accidental domain edits in the Vercel dashboard.
+  const API_URL = 'https://bauti-web-zoppas-projects.vercel.app/api/buti';
   const AI_AVAILABLE = /^https?:$/.test(location.protocol);
 
   // Allow only the formatting BUTI is told to use; strip anything active.
