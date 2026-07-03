@@ -177,6 +177,86 @@
       `,
     },
     {
+      id: 'postzoppa',
+      year: '2026 · Present',
+      title: 'Life After Zoppa',
+      body: `
+        <p>Leaving Zoppa didn't mean pressing pause. If anything, it became one of the most intense learning periods of my life. Instead of waiting for the right role to appear, I decided to treat the search itself as a chance to get better every single day.</p>
+        <p>I gave myself one simple rule: <strong>keep building, keep studying, and keep pushing to improve</strong>. So while I looked for my next step, I spent my time creating real, working products with AI, automating everything I could, and staying close to the people and ideas that push me forward. The point was never just to fill the gap, but to come out of it sharper than I went in. Here is what came out of it.</p>
+
+        <div class="zoppa-section-label">AI Agents</div>
+        <h2 style="margin-bottom:12px;">Super Labudu, Autonomous Job Search Agent</h2>
+        <p>An AI agent that finds the right roles for me before I even open a browser. Built on <strong>OpenClaw</strong> and powered by <strong>Claude</strong>, it runs my entire job search on autopilot. Three mornings a week it scans the market, filters out the noise, and sends me a clean shortlist of openings that actually match my profile.</p>
+        <ul class="key-points">
+          <li>Wakes up on its own every Monday, Tuesday and Wednesday at 9:00 AM Buenos Aires time, in an isolated background session with no supervision.</li>
+          <li>Fires two engines in parallel: saved searches on professional job networks, and the career portals of my target companies read straight at the source, including Ashby, Greenhouse, Workable and custom sites.</li>
+          <li>Filters every posting in three steps: relevance by title, seniority (0 to 3 years) and location (Buenos Aires and hybrid).</li>
+          <li>Remembers everything it has ever sent me with a hashed fingerprint, so I never see the same job twice.</li>
+          <li>Delivers a short, readable digest straight to my phone over WhatsApp (it first ran on Telegram).</li>
+        </ul>
+
+        <div class="zoppa-section-label">Automations</div>
+        <h2 style="margin-bottom:12px;">Weekly Financial Analysis</h2>
+        <p>An automated workflow that tracks how five tech stocks (<strong>Tesla, Nvidia, Mercado Libre, Google and SpaceX</strong>) moved each week, and emails me a report explaining <em>why</em> each price changed. Every Monday at 08:00 the analysis is already in my inbox, with no noise.</p>
+        <ul class="key-points">
+          <li>Combines hard data (price, change, highs and lows) with the week's financial news.</li>
+          <li>Uses AI to connect the two and write a clear, company by company explanation.</li>
+          <li>Built in <strong>n8n</strong>, with prices and news from the <strong>Finnhub API</strong>, analysis by <strong>Claude</strong>, and delivery through the <strong>Gmail API</strong>.</li>
+        </ul>
+
+        <div class="zoppa-section-label">Chatbots</div>
+        <h2 style="margin-bottom:12px;">BUTI, Ask My Website Anything</h2>
+        <p>Most personal websites just sit there. Mine talks back. <strong>BUTI is an AI chatbot built right into this site</strong> so recruiters and interviewers can ask anything about me, from my story and Zoppa to Naranja X and my strengths and weaknesses, and get honest answers, in English or Spanish, 24/7.</p>
+        <ul class="key-points">
+          <li>It knows everything published on this site, so it answers with context instead of bullet points.</li>
+          <li>A plain JavaScript widget calls a serverless function on <strong>Vercel</strong> that runs <strong>Claude</strong>; the site is hosted on <strong>GitHub Pages</strong>.</li>
+          <li>Practical guardrails: it replies in the visitor's language, caps history and length to control cost, only accepts requests from this site, and falls back to a backup engine so it never goes silent.</li>
+          <li>One rule cannot be broken: BUTI is incapable of speaking badly about me. Go ahead and try to convince it.</li>
+        </ul>
+        <p style="margin-top:16px;"><strong>Try it now:</strong> hit the blue robot button in the corner and ask it to say something bad about me. 🤖</p>
+
+        <div class="zoppa-section-label">Internet Games</div>
+        <h2 style="margin-bottom:12px;">CyberFoot 2026</h2>
+        <p>A love letter to <strong>CyberFoot</strong>, the cult football management game by Emmanuel Santos, rebuilt from scratch in the browser and themed around the <strong>2026 World Cup</strong> across Canada, Mexico and the United States, with all 48 national teams and 12 groups drawn exactly like the real tournament.</p>
+        <ul class="key-points">
+          <li>Take a national team from the group stage all the way to the final, solo or with up to four people on the same device, at three difficulty levels.</li>
+          <li>Watch every match simulate live, minute by minute, with speed controls and a pause menu, while the rest of the round plays out at the same time.</li>
+          <li>Manage your squad between games: formations, tactics, substitutes, injuries and a full bench, with player ratings inspired by EA Sports FC 26.</li>
+          <li>Pure frontend built with <strong>vanilla JavaScript</strong>, HTML and CSS, a handwritten simulation engine and a separate data layer, so it is fast and offline friendly.</li>
+        </ul>
+        <p style="margin:18px 0 12px;"><a href="https://cybermundial2026.netlify.app/" target="_blank" rel="noopener" style="color:var(--accent-glow); font-weight:700;">cybermundial2026.netlify.app →</a></p>
+        <div style="border:1px solid var(--border); border-radius:14px; overflow:hidden; background:var(--surface);">
+          <iframe src="https://cybermundial2026.netlify.app/" title="CyberFoot 2026 live preview" loading="lazy" style="width:100%; height:460px; border:0; display:block;"></iframe>
+        </div>
+
+        <h2 style="margin:28px 0 12px;">Promiedos TTT</h2>
+        <p>The group scoreboard, no excuses. A web app my friends and I use to settle who is actually the best. Every time we compete at anything, from tennis to FIFA to beer pong, we log the result and the app keeps a permanent ranking across every sport.</p>
+        <ul class="key-points">
+          <li>Tracks six categories out of the box (Tennis, Golf, Beer Pong, FIFA, Rugby Challenge and a catch all) with a global ranking and a table per sport.</li>
+          <li>Live ranking per player: matches, wins, losses, win rate, medals for the top three and charts of the standings.</li>
+          <li>Full stack: <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>Recharts</strong> and a <strong>Supabase</strong> database that recalculates every ranking automatically.</li>
+        </ul>
+        <p style="margin:18px 0 12px;"><a href="https://promiedos-ttt.netlify.app" target="_blank" rel="noopener" style="color:var(--accent-glow); font-weight:700;">promiedos-ttt.netlify.app →</a></p>
+        <div style="border:1px solid var(--border); border-radius:14px; overflow:hidden; background:var(--surface);">
+          <iframe src="https://promiedos-ttt.netlify.app" title="Promiedos TTT live preview" loading="lazy" style="width:100%; height:460px; border:0; display:block;"></iframe>
+        </div>
+
+        <div class="zoppa-section-label">Big Data</div>
+        <p>Alongside the projects, I have kept sharpening my data skills through practical <strong>big data exercises</strong>.</p>
+
+        <div class="zoppa-section-label">Events &amp; Talks</div>
+        <p>I also made a point of staying close to the ecosystem, learning, judging, and reconnecting with people I admire.</p>
+        <ul class="key-points">
+          <li><strong>Judge at Universidad de San Andrés</strong>: I judged a Shark Tank style competition for the Introduction to Management course run by professors Jesús Aybar and Federico Bornico (my former business partner), listening, questioning, scoring and voting on each project.</li>
+          <li><strong>Anthropic &amp; Kaszek Hackathon</strong>: we built a credit scoring product for companies based on how people answer a set of questions, using signals like response time, spelling mistakes, and the environment where the photo was taken, among many other metrics.</li>
+          <li><strong>ClawCon</strong>: attended to go deeper on agentic AI.</li>
+          <li><strong>Endeavor</strong>: to reconnect with entrepreneur friends and investors I had not seen in a while, and to hear people I deeply admire.</li>
+          <li><strong>CEOs E-VOLUTION</strong>: a chance to cross paths with highly influential people and take away valuable lessons.</li>
+          <li><strong>Webinars</strong>: Arcap's 'La tendencia detrás del capital: insights claves de LAVCA' and Workana's 'Cómo construir equipos AI Augmented en 2026', to keep learning and stay informed on topics I care about.</li>
+        </ul>
+      `,
+    },
+    {
       id: 'advisor',
       year: '2026',
       title: 'Soon',
@@ -187,7 +267,7 @@
   ];
 
   /* ── Navigation order ────────────────────────────────────────── */
-  const order = ['born','argentina','ucla','newman','pandemic','fund','commerce','nx','sanandres','zoppa'];
+  const order = ['born','argentina','ucla','newman','pandemic','fund','commerce','nx','sanandres','zoppa','postzoppa'];
 
   /* ── Render ──────────────────────────────────────────────────── */
   function render() {
